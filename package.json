@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "a node js tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohanPrakash305/NodeJs-tutorial-.git"
+  },
+  "author": "Rohan prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohanPrakash305/NodeJs-tutorial-/issues"
+  },
+  "homepage": "https://github.com/RohanPrakash305/NodeJs-tutorial-#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
