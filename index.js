@@ -69,21 +69,47 @@
 //     console.log("invalid input")
 // }
 
-const fs = require('fs');
+// const fs = require('fs');
+
+// const path = require('path');
+// const dirPath = path.join(__dirname,'files');
+
+// for(i=0;i<5;i++)
+// {
+//     fs.writeFileSync(dirPath+"/hello"+i+".txt","a simple tet file");
+// }
+
+// fs.readdir(dirPath,(err,file)=>{
+
+//     console.warn(file)
+
+//     file.forEach((item)=>{
+//         console.warn(item);
+//     })
+// })
+
+const fs = require('fs')
 
 const path = require('path');
-const dirPath = path.join(__dirname,'files');
+const dirPath=path.join(__dirname,'crud')
+const filepath = `${dirPath}/rohan.rxt`;
 
-for(i=0;i<5;i++)
-{
-    fs.writeFileSync(dirPath+"/hello"+i+".txt","a simple tet file");
-}
+// console.log(dirPath)
+// fs.writeFileSync(filepath,'This is a simple text file')
+// fs.readFile(filepath,'utf-8',(er,item)=>{
+    // console.log(item)
+// })
 
-fs.readdir(dirPath,(err,file)=>{
+// fs.appendFile(filepath,'and text',(err)=>{
 
-    console.warn(file)
+//     if(!err)console.log("file is updated")
 
-    file.forEach((item)=>{
-        console.warn(item);
-    })
-})
+// })
+
+// fs.rename(filepath,`${dirPath}/Prakash.txt`,(err)=>{
+//     if(!err)
+//         console.log("file name is updated")
+// })
+
+
+// fs.unlinkSync(`${dirPath}/Prakash.txt`)
