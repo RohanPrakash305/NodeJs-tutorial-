@@ -87,12 +87,13 @@
 //         console.warn(item);
 //     })
 // })
+// ........................................
 
-const fs = require('fs')
+// const fs = require('fs')
 
-const path = require('path');
-const dirPath=path.join(__dirname,'crud')
-const filepath = `${dirPath}/rohan.rxt`;
+// const path = require('path');
+// const dirPath=path.join(__dirname,'crud')
+// const filepath = `${dirPath}/rohan.rxt`;
 
 // console.log(dirPath)
 // fs.writeFileSync(filepath,'This is a simple text file')
@@ -113,3 +114,29 @@ const filepath = `${dirPath}/rohan.rxt`;
 
 
 // fs.unlinkSync(`${dirPath}/Prakash.txt`)
+
+// console.log("first")
+
+
+// setTimeout(()=>{
+
+//     console.log("second")
+// },2000)
+
+
+// console.log("third")
+
+let a=20;
+
+let b=0;
+
+let waitingData = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(30)
+    },2000)
+})
+
+waitingData.then((data)=>{
+    b=data;
+    console.log(a+b)
+})
