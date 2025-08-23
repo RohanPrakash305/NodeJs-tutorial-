@@ -18,6 +18,7 @@
   "homepage": "https://github.com/RohanPrakash305/NodeJs-tutorial-#readme",
   "dependencies": {
     "colors": "^1.4.0",
+    "express": "^5.1.0",
     "simple-node-logger": "^21.8.12"
   }
 }

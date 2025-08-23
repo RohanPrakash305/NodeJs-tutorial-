@@ -114,6 +114,7 @@
 
 
 // fs.unlinkSync(`${dirPath}/Prakash.txt`)
+// ............................
 
 // console.log("first")
 
@@ -125,18 +126,72 @@
 
 
 // console.log("third")
+// .............................
 
-let a=20;
+// let a=20;
 
-let b=0;
+// let b=0;
 
-let waitingData = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        resolve(30)
-    },2000)
-})
+// let waitingData = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve(30)
+//     },2000)
+// })
 
-waitingData.then((data)=>{
-    b=data;
-    console.log(a+b)
-})
+// waitingData.then((data)=>{
+//     b=data;
+//     console.log(a+b)
+// })
+
+// ..................................
+
+
+// const express = require('express')
+// const app = express();
+
+// app.get("",(req,res)=>{
+//     console.log("data sent by browser",req.query.name)
+
+//     res.send('welcom,this is Home page');
+// })
+
+// app.get('/about',(req,res)=>{
+
+//     res.send(`
+        
+//         <input type = "text" placeholder = "User name"/>
+        
+//         `);
+// })
+
+
+// app.listen(5000);
+
+
+// ...........................
+
+
+// const express = require('express')
+
+// const path = require('path')
+
+// const app = express()
+// const publicpath=path.join(__dirname,'public');
+// console.log(__dirname)
+
+// // app.use(express.static(publicpath));
+
+// app.get('',(req,res)=>{
+//     res.sendFile(`${publicpath}/index.html`)
+// })
+
+
+// app.get('/about',(req,res)=>{
+//     res.sendFile(`${publicpath}/about.html`)
+// })
+
+
+
+// app.listen(5000)
+
+
