@@ -194,4 +194,23 @@
 
 // app.listen(5000)
 
+// ............Middleware..............
 
+
+const express = require('express')
+const reqFilter =require('./middileware')
+const app = express()
+
+// app.use(requireFilter)
+app.get('/',(req ,res)=>{
+
+  res.send("hello")
+})
+app.get('/about',reqFilter,(req ,res)=>{
+
+  res.send("hello ,this is about")
+})
+
+
+
+app.listen(4000)
